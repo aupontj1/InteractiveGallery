@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Programming Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Interactive Image Gallery</h2>
+        <p>Guide: Just click the image, and see what happens.</p>
+
+        <ul id="gallery-imgs">
+            <li>
+                <img src="imgs/gallery-img1.jpg" onclick="showImg('imgs/gallery-img1.jpg')">
+            </li>
+
+            <li>
+                <img src="imgs/gallery-img2.jpg" onclick="showImg('imgs/gallery-img2.jpg')">
+            </li>
+            
+            <li>
+                <img src="imgs/gallery-img3.jpg" onclick="showImg('imgs/gallery-img3.jpg')">
+            </li>
+            
+            <li>
+                <img src="imgs/gallery-img4.jpg" onclick="showImg('imgs/gallery-img4.jpg')">
+            </li>
+            
+            <li>
+                <img src="imgs/gallery-img5.jpg" onclick="showImg('imgs/gallery-img5.jpg')">
+            </li>
+            
+            <li>
+                <img src="imgs/gallery-img6.jpg" onclick="showImg('imgs/gallery-img6.jpg')">
+            </li>
+        </ul>
+    
+        <div id="spotlight" class="spotlight-img">
+            <i class="fa-solid fa-x" onclick="closeImg()"></i>
+            <img id="main-img" class="main-item">
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
